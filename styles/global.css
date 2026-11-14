@@ -49,6 +49,10 @@ h1 {
     color: var(--content-primary);
     font-weight: var(--fw-bold);
     font-size: var(--fs-title);
+
+    display: block;
+    padding-top: 1rem;
+    padding-left: 2rem;
 }
 
 p {
@@ -71,3 +75,5 @@ a {
     }
 
 }
+
+
