@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font: inherit
 }
 
@@ -46,6 +47,8 @@ body {
 
 h1 {
     color: var(--content-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-title);
 }
 
 p {
@@ -56,4 +59,15 @@ a {
     text-decoration: none;
     color: var(--color-brand);
     font-size: var(--fs-link);
+    font-weight: var(--fw-medium);
+
+    display: inline-flex;
+    align-items: center;
+    padding-top: 2.125rem;
+    padding-left: 2rem;
+
+    & img {
+        transform: rotate(180deg);
+    }
+
 }
