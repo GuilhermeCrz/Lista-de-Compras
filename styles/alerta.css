@@ -34,3 +34,11 @@
         }
     }
 }
+
+@media (width >= 80em) {
+    #alerta {
+        width: 100%;
+        max-width: 39.1875rem;
+        margin-inline: auto;
+    }
+}
