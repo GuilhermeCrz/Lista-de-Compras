@@ -5,6 +5,37 @@
     margin-inline: auto;
 }
 
+header #logo-container  {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-brand);
+    font-size: var(--fs-link);
+    font-weight: var(--fw-medium);
+
+    display: inline-flex;
+    align-items: center;
+    padding-top: 2.125rem;
+    padding-left: 2rem;
+
+    & img {
+        transform: rotate(180deg);
+    }
+
+}
+
+h1 {
+    color: var(--content-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-title);
+
+    display: block;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -37,4 +68,68 @@ form {
     & input:hover {
         border-color: var(--border-hover);
     }
+}
+
+@media (width >= 80em) {
+
+    header,
+    #adicionar,
+    #lista,
+    #alerta {
+        width: 100%;
+        max-width: 39.1875rem;
+        margin-inline: auto;
+    }
+
+    header {
+        width: 100%;
+        max-width: 39.1875rem;
+        margin-inline: auto;
+    }
+    
+    header #logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4375rem;
+        padding-top: 1.5625rem;
+        color: var(--content-secondary);
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-title);
+    }
+
+    header a {
+        display: inline-flex;
+        align-items: center;
+        padding-top: 3.875rem;
+        padding-left: 0;
+
+        & img {
+            transform: rotate(180deg);
+        }
+
+    }
+
+    header h1 {
+        display: block;
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+
+    #adicionar form {
+        margin-inline: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        & input {
+            flex: 1;
+        }
+
+        & button {
+            padding-inline: 1.5rem;
+            white-space: nowrap;
+        }
+    }
+
 }
