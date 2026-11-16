@@ -35,6 +35,10 @@
     }
 }
 
+.hidden {
+    display: none;
+}
+
 @media (width >= 80em) {
     #alerta {
         width: 100%;
